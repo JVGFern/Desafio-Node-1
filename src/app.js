@@ -77,9 +77,7 @@ app.post("/repositories/:id/like", (req, res) => {
   if (!repository) {
     return res.status(400).send();
   }
-
   repository.likes +=1;
-
   return res.json(repository);
 });
 
